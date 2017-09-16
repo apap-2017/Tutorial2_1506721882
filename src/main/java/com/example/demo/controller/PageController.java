@@ -17,7 +17,7 @@ public class PageController {
 	}
 	
 	@RequestMapping("/greeting")
-	public String greeting (@RequestParam(value = "name", defaultValue = "dunia")String name, Model model ) {
+	public String greeting (@RequestParam(value = "name")String name, Model model ) {
 		model.addAttribute("name", name);
 		return "greeting";
 	}
